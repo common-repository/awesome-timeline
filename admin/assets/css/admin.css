@@ -1,0 +1,192 @@
+/* This stylesheet is used to style the admin option form of the plugin. */
+
+
+/*
+----------------------------
+RESETS
+----------------------------
+*/
+#wpfooter{ position: relative; }
+#wpcontent { background: #f1f1f1 !important; }
+
+#titlediv #title-prompt-text{ font-size: 1.7em; font-family: "Open Sans",sans-serif; font-weight: 500; }
+
+#titlediv label{ font-weight: 200; }
+
+div.button.icon-picker{ width: 181px; }
+
+#preview_icon_picker_example_icon1{ background: transparent; }
+
+#atl-date-picker{ height: 45px; text-align: center; cursor: pointer; background: #fff;}
+
+.atl-icon-picker-container label{ margin-top: 12px; }
+
+#wdm_timeline_name{ height: 40px; -webkit-border-radius: 0; border-radius: 0; }
+
+.atl-setting-heading{ font-size: 23px; }
+
+#wpbody-content{ padding-bottom: 0; }
+
+.thumbnail.column-thumbnail img.attachment-50x50.size-50x50{
+
+	display: none;
+}
+
+#wpbody-content {
+ 	
+ 	   min-height: auto !important;
+}
+
+.atl-datepicker.hasDatepicker{
+	text-align: center !important;
+}
+
+/*
+----------------------------
+TIMELINE SETTINGS PAGE 
+----------------------------
+*/
+
+.banner-box{ 
+
+	background-color: #fff; 
+	-webkit-border-radius: 2px; 
+	        border-radius: 2px;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.banner-box.atl-help-box, .atl-support-box{ padding-bottom: 14px; }
+
+.tl-heading-container{ 
+
+	background: #fff !important; 
+	padding: 0 15px !important;
+
+}
+
+.tl-heading { font-size: 14px !important; }
+
+.tl-mg-top{ margin-top: 62px; }
+
+.tl-input{ height: 30px !important; }
+
+.tl-info-mg{ 
+
+	display: block;
+	margin-top: 5px;
+	font-size: 13px;
+ }
+
+ .tl-read-mg{ 
+
+ 	margin-top: 6px;
+ 	margin-left: 3px;
+  } 
+
+ .radio-mg-left{ margin-left: 10px !important; }
+
+ .select-announcetment-mg{ 
+
+ 	margin-left: 15px;
+    margin-bottom: 10px;
+
+ }
+
+ .mg-btm{ margin-bottom: 30px; }
+
+ #character-limit, #option-button{ display: none; }
+
+ .date-settings, .color-settings, .post-settings{ 
+
+ 	border: 1px solid #d3d3d3; 
+ 	-webkit-border-radius: 2px; 
+ 	        border-radius: 2px;
+ 	padding: 10px;
+ 	margin-bottom: 30px;
+ }
+
+/*
+-------------------------
+ADD ANNOUNCEMENT SETTINGS
+-------------------------
+*/
+
+.atl-date-picker-container, .atl-icon-picker-container, .atl-icon-picker-bg-container { padding: 20px 0;}
+
+.atl-datepicker{ margin-left: 20px; }
+
+.help-atl .atl-help-title{ 
+
+	text-align: center;
+	font-size: 14px; 
+}
+
+.atl-help-content{
+
+	font-size: 13px;
+	padding: 10px;
+}
+
+.help-atl{
+
+	padding-top: 14px;
+}
+
+.atl-help-buttons{ text-align: center; }
+
+.atl-help-buttons button{
+
+
+	background: #F1F1F1;
+	border: 1px solid #999;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
+	padding: 3px 14px;
+
+}
+
+
+.dashicons-star-filled { color: #FEBE12; }
+
+.atl-star-cont{ text-align: center; }
+
+.btn-tweet{ background: #1B95E0; padding: 3px 10px; color: #fff; }
+
+.atl-date-picker-container .atl-datepicker, div.button.icon-picker{ 
+
+
+	margin-left: 100px;
+	width: 106px;
+
+
+}
+
+.atl-icon-picker-container .wp-picker-container,.atl-icon-picker-container .wp-picker-container{
+
+	margin-left: 25px;
+
+}
+
+#atl-icon-color-label{ margin-right: 79px; margin-top: -10px;}
+
+.atl-alert-img{ 
+
+	background: #D9EDF7;
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+	padding: 10px;
+	margin: 10px 0;
+	display: block;
+	color: #3187D0;
+
+}
+
+.atl-icon-picker-bg-containerlabel{
+	margin-top: -10px;
+}
+
+.atl-icon-picker-bg-container .wp-picker-container{
+	margin-left: 28px;
+}
+

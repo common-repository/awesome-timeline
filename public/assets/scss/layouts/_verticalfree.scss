@@ -1,0 +1,428 @@
+/*
+----------------------
+Vertical Timeline Free
+----------------------
+*/
+
+/*VARIABLES*/
+
+  /* timeline color*/
+
+  $timeline-color: #eee;
+
+  /* timeline icon */
+
+  $icon-bg-color: #de3c16;
+  $icon-logo: '';
+  $icon-width: 40px;
+  $icon-height: 40px;
+
+  /* timeline date */
+
+  $date-color: #de3c16;
+
+  /* timeline container */
+
+  $container-bg-color: #fff;
+  $container-border-color: #d3d3d3;
+
+  /* timeline post content */
+
+  $post-bg-color: #eee;
+  $post-border-color:'';
+  $post-text-color:'';
+  $post-font-family:''; 
+
+
+	.awsme-timeline-headline { margin: auto; width: 65%; }
+	.awsme-timeline-headline h1{ text-align: center; padding: 10px; }
+	.timeline-container { margin-bottom: 160px !important; }
+
+	.awsme-timeline-left{ top: 18px;}
+
+/*
+MOBILE DEVICES
+*/
+@media screen and (max-width: 599px){
+
+	#awesome-timeline{
+
+		margin: auto;
+		width: auto;
+
+			.timeline-ver::before{
+
+		    position: absolute;
+		    content: ' ';
+		    width: 2px;
+		    background: $timeline-color;
+		    top: 0;
+		    height: 100%;
+		    left: 50%; /* for mobile device center align */
+
+		  }
+
+		.timeline-ver{
+
+	    position: relative;
+	    list-style: none;
+			
+
+				li{
+					margin-bottom: 20px;
+				}
+
+				/* timeline icon-logo */
+				.timeline-icon{
+
+					position: absolute;
+					width: $icon-width;
+					height: $icon-height;
+					background: $icon-bg-color;
+					border-radius: 50%;
+					left: 50%;
+					transform: translateX(-50%);
+					margin-top: 46px;
+
+
+					.icon-logo{
+						background: url('../genesis-sample/Anchor_Filled-20.png') no-repeat;
+						height: 40px;
+						width: 40px;
+						display: block;
+						background-position: 10px 10px;
+					}
+
+				}
+
+				/* timeline content right */
+		      .timeline-content-right, .timeline-content-left{
+
+		        position: relative;
+		        width: auto;
+		        left: 0;
+		        top: 114px;
+				background: $post-bg-color;
+				margin: auto;
+				margin-bottom: 100px;				
+				box-shadow: 2px 5px 28px !important;
+				
+
+		      }
+
+
+		      /* timeline li right */
+		      .awsme-timeline-right, .awsme-timeline-left{
+
+		        position: relative;
+		      }		      
+
+				.content-date-left, .content-date-right{
+
+			        display: block;
+			        position: absolute;
+			        left: 11.5%;
+			        top: 56px;
+			        color: $date-color;
+					font-size: 13px;
+	     		 }
+
+				.box-container{
+
+					display: table;					
+
+					.timeline-excerpt-ver{
+							display: table-footer-group;;
+						}
+					.flex-img{
+						display: table-header-group;;
+					}
+				}
+
+
+				.timeline-excerpt-ver{ padding: 10px; }
+
+				.post-content-left{ padding: 10px; }
+
+		}
+
+
+	}
+
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+
+	#awesome-timeline{
+
+		margin: auto;
+		width: 100% !important;
+
+		.timeline-ver::before{
+
+	    position: absolute;
+	    content: ' ';
+	    width: 2px;
+	    background: $timeline-color;
+	    top: 0;
+	    height: 100%;
+	    left: 0;
+
+	  }
+
+		.timeline-ver{
+
+	    position: relative;
+	    list-style: none;
+
+			/* timeline beings*/
+
+				li{
+					margin-bottom: 35px;
+				}
+
+				/* timeline icon-logo */
+				.timeline-icon{
+
+					position: absolute;
+					width: $icon-width;
+					height: $icon-height;
+					background: $icon-bg-color;
+					border-radius: 50%;
+					transform: translateX(-50%);
+					margin-top: 220px;
+
+					.icon-logo{
+						height: 40px;
+						width: 40px;
+						display: block;						
+					}
+
+				}
+
+				/* timeline content right */
+	      .timeline-content-right, .timeline-content-left{
+
+	        position: relative;
+	        width: 55%;
+	        left: 9%;
+	        top: 30px;
+			background: $post-bg-color;
+			margin: auto;			
+			box-shadow: 2px 5px 28px !important;
+	      }
+
+
+	     /* timeline li right*/
+	      .awsme-timeline-right, .awsme-timeline-left{
+
+	        position: relative;
+	      }
+
+				.content-date-left, .content-date-right{
+
+	        display: block;
+	        position: absolute;
+	        left: 9%;
+	        top: 224px;
+	        color: $date-color;
+
+	      }
+
+				.box-container{
+
+					display: table;					
+
+					.timeline-excerpt-ver{
+							display: table-footer-group;;
+						}
+					.flex-img{
+						display: table-header-group;;
+					}
+				}
+
+
+				.timeline-excerpt-ver{ padding: 10px; }
+
+				.post-content-left{ padding: 10px; }
+
+		}
+
+
+	}
+
+}
+
+/*
+DESKTOP DEVICES
+*/
+@media screen and (min-width: 1025px){
+
+#awesome-timeline{
+
+		margin-bottom: 60px;
+		margin: auto;
+		width: 100% ;
+ 
+
+  .timeline-container{
+
+    background: $container-bg-color;
+    border: $container-border-color;
+    margin: auto;
+    width: 500px;
+
+  }
+
+  .timeline-ver::before{
+
+    position: absolute;
+    content: ' ';
+    width: 2px;
+    background: $timeline-color;
+    top: 0;
+    height: 100%;
+    left: 50%;
+
+  }
+
+  .timeline-ver{
+
+    position: relative;
+    list-style: none;
+
+   /* timeline right beings
+
+      timeline icon-logo*/
+      .timeline-icon{
+
+        position: absolute;
+        width: $icon-width;
+        height: $icon-height;
+        background: $icon-bg-color;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 212px;
+
+        .icon-logo{
+          background: url('../genesis-sample/Anchor_Filled-20.png') no-repeat;
+          height: 40px;
+          width: 40px;
+          display: block;
+          background-position: 10px 10px;
+        }
+
+      }
+
+      /*timeline content right*/
+      .timeline-content-right{
+
+        position: relative;
+        width: 270px;
+        left: 40%;
+        top: 30px;
+		background: $post-bg-color;
+		margin: auto;
+		height: auto;
+		box-shadow: 2px 5px 28px !important;
+      }
+
+
+      /*// timeline li right*/
+      .awsme-timeline-right, .awsme-timeline-left{
+
+        /*// margin-bottom: 30px;*/
+        position: relative;
+      }
+
+      .content-date-left{
+
+        display: block;
+        position: absolute;
+        left: 23%;
+        top: 220px;
+        color: $date-color;
+      } /*//timeline right ends*/
+
+      /*//timeline left beings*/
+      .content-date-right{
+
+        display: block;
+        position: absolute;
+        right: 23%;
+        top: 220px;
+        color: $date-color;
+
+      }
+
+      .timeline-content-left{
+
+        position: relative;
+        width: 270px;
+        left: -40%;
+        top: 30px;
+		background: $post-bg-color;
+		margin: auto;
+		box-shadow: 2px 5px 28px !important;
+
+      }/*timeline left ends*/
+
+
+      /*misc*/
+
+      .post-img-ver { max-width: 100% !important; object-fit: cover !important; vertical-align: top !important; }     
+
+      .excerpt-date{ font-size: 12px; display: block; }
+
+      .timeline-excerpt-ver{
+
+
+        padding: 10px;
+				font-size: 0.8em;
+
+        h5{
+          line-height: 23px;
+		  font-size: 1.3em;
+        }
+
+        a{
+
+          font-size: 12px;
+          font-weight: 700;
+          color: #222;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+      }     
+
+  }
+
+}
+
+} 
+
+
+@media screen and (min-width: 1600px){
+
+	#awesome-timeline{ width: 100%; }
+
+
+	.timeline-content-left{
+
+		left: -40% !important;
+	}
+
+	.timeline-content-right{
+
+		left: 40% !important;
+
+	}
+
+
+}
+
+.entry-content ul > li{ list-style: none !important;}
